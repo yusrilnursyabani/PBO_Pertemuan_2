@@ -8,6 +8,8 @@ public class MMahasiswa {
     public static void main(String[] args) {
         MataKuliah PBO = new MataKuliah("PBO", "Pemrograman Berorientasi Objek", 3);
         MataKuliah MBD = new MataKuliah("MBD", "Manajemen Basis Data", 3);
+        MataKuliah SISCER = new MataKuliah("SISCER", "Sistem Cerdas", 3);
+        MataKuliah RPL = new MataKuliah("RPL", "Rekayasa Perangkat Lunak", 3);
         
         Mahasiswa M1 = new Mahasiswa("181", "Yusril", "Informatika");
         Dosen D1 = new Dosen("123", "Pak Nurdin", "Informatika");
@@ -17,6 +19,8 @@ public class MMahasiswa {
         M1.setKendaraan(K1);
         M1.tambahMatkul(PBO);
         M1.tambahMatkul(MBD);
+        M1.tambahMatkul(RPL);
+        M1.tambahMatkul(SISCER);
         
         M1.printDetailMhs();
         System.out.println("Jumlah Mata Kuliah: " + M1.getJumlahMatKul());
